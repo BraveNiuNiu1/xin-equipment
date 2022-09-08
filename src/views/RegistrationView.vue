@@ -1,0 +1,32 @@
+<template>
+<div class="registration-view">
+  <div class="l">
+    <h2>设备登记</h2>
+    <search-box />
+  </div>
+  <div class="r">
+    <registration-list />
+  </div>
+</div>
+</template>
+
+<script>
+import SearchBox from '@/components/SearchBox.vue';
+import RegistrationList from '@/components/RegistrationList.vue';
+export default {
+  components: {
+    SearchBox,
+    RegistrationList
+  }
+};
+</script>
+
+<style lang="sass">
+.registration-view
+  .l
+    float: left
+    width: 240px
+  .r
+    padding-left: 20px
+    overflow: hidden
+</style>
